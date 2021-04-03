@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html CRUD operation with pure javascript</title>
+        <link rel="stylesheet" type="text/css" href="G:/HTMLjsCRUD/style.css">
+        <link rel="shortcut icon" href="G:/HTMLjsCRUD/images/logo.jpg" type="image/jpg" >
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <!--html form for CRUD Operation-->
+                    <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" name= "fullName" id="fullName">
+                        </div>
+                            <div>
+                                <label>Emp Code</label>
+                                <input type="text" name= "empCode" id="empCode">
+                            </div>
+                                <div>
+                                    <label>Salary Paid</label><span ></span>
+                                    <input type="text" name= "salary" id="salary">
+                                </div>
+                                <div>
+                                        <label>City Name</label>
+                                        <input type="text" name= "city" id="city">
+                                    </div>
+                                   
+                                    <div class="form-action-buttons">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                    </form>
+                </td>
+                <td>
+                    <!--table to list all records-->
+                    <table class="list" id="employeeList"> 
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Emp Code</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+       
+        <script src="G:/HTMLjsCRUD/script.js"></script>
+    </body>
+</html>
